@@ -1,0 +1,19 @@
+/* Align Icons to */
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+
+#what .items .item h3 {
+    text-align: left;
+} 
+
+/* Position icons */
+#what .items .item i{
+    align-self: center;
+    margin-right: 1.3rem ;
+    margin-bottom: 1rem;
+}
+#contact .map {
+    flex: 2;
+}
