@@ -113,7 +113,7 @@ p {
 
 /* navbar */
 #navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;    
     justify-content: space-between;
@@ -158,7 +158,7 @@ p {
     padding: 0.75rem;
     /* overlay */
     position: absolute;
-    top: 68px;
+    top: -65;
     right: 0;
     left: 0;
     bottom: 0;
@@ -203,7 +203,7 @@ p {
     background: url('../img/people.jpg')no-repeat center center/cover;
 }
 
-#who .who-text {
+#who {
     background: #333;
 }
 
@@ -211,6 +211,12 @@ p {
 #who .who-text p {
     margin-bottom: 0.5rem;
 }
+
+/* #who .who-text h3, 
+#who .who-text p 
+#who .who-text ul li {
+    margin: 8px;
+} */
 
 /* Section: Our Clients */
 #clients .items { 
@@ -244,6 +250,9 @@ p {
 #contact .contact-form textarea {
     padding: 0.5rem;
     width: 100%;
+    border-radius: 5px;
+    border: none;
+    border-color: #333;
 }
 
 

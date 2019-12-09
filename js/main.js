@@ -1,10 +1,10 @@
 // Initialize and add the map
 function initMap() {
   // Your location
-  const loc = { lat: 6.546090, lng: 3.346610 };
+  const loc = { lat: 42.361145, lng: -71.057083 };
   // Centered map on location
   const map = new google.maps.Map(document.querySelector('.map'), {
-    zoom: 15,
+    zoom: 14,
     center: loc
   });
   // The marker, positioned at location
@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 
 
 // Smooth Scrolling
-$('#navbar a,').on('click', function(event) {
+$('#navbar a, .btn').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 

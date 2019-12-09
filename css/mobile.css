@@ -1,3 +1,13 @@
+  /* overlay */
+  #showcase .showcase-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4)
+  }
+
 /* display items block */
 #what .items {
     display: block;
@@ -25,20 +35,21 @@
     #navbar{
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
  
     #navbar .logo {
-        font-size: 2rem;
-        margin-bottom: 0.5rem; 
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem; 
         text-align: center;      
     }
      
     #navbar ul  {
-        padding: 0.5rem;
+        padding: 0.3rem;
     }
 
     #showcase .showcase-content {
-        top: 110px;
+        /* top: 110px; */
     } 
 
     #who {
@@ -66,11 +77,12 @@
         border-top: 5px #333 solid;
     }
 }
-
+/* this section is to take the shadow away from the who section
+as it drops down and covers some parts of the who we are section */
 @media (max-height: 568px) {
 #showcase .showcase-content {
  padding-top: -3rem;
- top: 110px;
+ top: 0;
 }
 
  .l-heading {
@@ -80,4 +92,10 @@
  .lead {
      font-size: 1rem;
  }
+}
+
+@media (max-height: 320px) {
+#showcase .showcase-content {
+  top: 0;
+    } 
 }
